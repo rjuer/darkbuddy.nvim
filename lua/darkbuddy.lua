@@ -26,20 +26,16 @@ Color.new('lightorange', '#FFC66D')
 Color.new('fancyblue', '#6190c2')
 Color.new('fancyyellow', '#b2bf39')
 
+Color.new('searchbg', '#bfbfbf')
+Color.new('searchfg', '#5e5e5e')
+
 --------------------------------
 -- Miscellaneous Highlighting --
 --------------------------------
 
--- Group.new('CursorColumn', c.none, c.none, s.NONE)
--- Group.new('CursorLine', c.none, c.none, s.NONE)
--- Group.new('ToolbarLine', c.none, c.none, s.NONE)
--- Group.new('ToolbarButton', c.none, c.none, s.bold)
--- Group.new('NormalMode', c.none, c.background, s.reverse)
--- Group.new('InsertMode', c.none, c.none, s.reverse)
--- Group.new('ReplaceMode', c.none, c.none, s.reverse)
--- Group.new('VisualMode', c.none, c.none, s.reverse)
--- Group.new('CommandMode', c.none, c.none, s.reverse)
--- Group.new('Warnings', c.none, c.none, s.reverse)
+Group.new('Search', c.searchfg, c.searchbg, s.NONE)
+Group.new('IncSearch', c.searchfg, c.searchbg, s.NONE)
+Group.new('CursorLineNr', c.lightorange)
 
 ------------------------------------
 -- Language-specific highlighting
@@ -62,9 +58,31 @@ Group.new('pythonBuiltinObj', c.green)
 Group.new('pythonDecorator', c.blue)
 
 -- Scala
+Group.new('scalaAnnotation', c.violet)
+Group.new('scalaCapitalWord', c.white)
+Group.new('scalaCommentAnnotation', c.white)
+Group.new('scalatypeannotationparamater', c.pink)
+Group.new('scalaCommentCodeblock', c.cyan)
+Group.new('scalaDocLinks', c.white)
+Group.new('scalaDocLinks', c.white)
 Group.new('scalaKeyword', c.orange)
+Group.new('scalaSpecial', c.orange)
+Group.new('scalaKeywordModifier', c.orange)
 Group.new('scalaNameDefinition', c.yellow)
 Group.new('scalaSymbol', c.aqua)
+Group.new('scalanamedefinition', c.superwhite)
+
+-- Java
+Group.new('javaSpecial', c.orange)
+Group.new('javaClassDecl', c.orange)
+Group.new('javaMethodDecl', c.orange)
+Group.new('javaFuncDef', c.orange)
+Group.new('javaTypeDef', c.orange)
+Group.new('javaAnnotation', c.violet)
+Group.new('javaVarArg', c.violet)
+Group.new('javaScopeDecl', c.orange)
+Group.new('javaStorageClass', c.orange)
+Group.new('javaLambdaDef', c.orange)
 
 -- Rust
 Group.new('rustFuncName', c.lightorange)
@@ -81,6 +99,61 @@ Group.new('luaLocal', c.orange)
 Group.new('luaCond', c.orange)
 Group.new('luaFuncId', c.violet)
 Group.new('luastatement', c.violet)
+
+-- bash, sh
+Group.new('shShebang', c.blue)
+Group.new('shFunction', c.blue)
+Group.new('shStatement', c.blue)
+Group.new('shCaseBar', c.blue)
+
+-- Terraform
+Group.new('hclFunction', c.white)
+Group.new('hclAttributeName', c.lightorange)
+Group.new('hclConditional', c.orange)
+Group.new('hclRepeat', c.orange)
+Group.new('hclValueBool', c.violet)
+Group.new('hclValueDec', c.violet)
+Group.new('hclValueNull', c.violet)
+
+-- Vim
+Group.new('vimmap', c.blue)
+Group.new('vimMapBang', c.blue)
+Group.new('vimLet', c.blue)
+Group.new('vimSetMod', c.white)
+Group.new('vimMapMod', c.white)
+Group.new('vimnotation', c.white)
+Group.new('vimmapmodkey', c.lightorange)
+Group.new('vimmaplhs', c.lightorange)
+Group.new('vimFunction', c.lightorange)
+Group.new('vimFunctionName', c.lightorange)
+
+-- R
+Group.new('rFunction', c.lightorange)
+
+-- C#
+Group.new('csClass', c.orange)
+Group.new('csClassType', c.orange)
+Group.new('csModifier', c.orange)
+Group.new('csNumber', c.violet)
+
+-- PHP
+Group.new('phpFunctions', c.lightorange)
+Group.new('phpClasses', c.orange)
+Group.new('phpDefine', c.orange)
+Group.new('phpIdentifier', c.white)
+
+-- HTML
+Group.new('htmlTag', c.white)
+Group.new('htmlTagName', c.lightorange)
+Group.new('endTag', c.white)
+
+-- JavaScript
+Group.new('jsTry', c.orange)
+Group.new('jsCatch', c.orange)
+Group.new('jsConditional', c.orange)
+Group.new('jsFuncCall', c.white)
+Group.new('jsFuncName', c.pink)
+Group.new('jsSpecial', c.pink)
 
 ------------------------------------
 -- File-specific highlighting
