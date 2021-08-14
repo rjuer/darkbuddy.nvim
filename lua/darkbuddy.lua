@@ -62,6 +62,7 @@ Group.new('diffSubname', c.white)
 Group.new('diffOldFile', c.white)
 Group.new('diffNewFile', c.white)
 Group.new('diffIndexLine', c.white)
+Group.new('diffFile', c.fancyblue)
 
 ------------------------------------
 -- Language-specific highlighting
@@ -71,7 +72,7 @@ Group.new('diffIndexLine', c.white)
 Group.new('pythonStatement', c.orange)
 Group.new('pythonConditional', c.orange)
 Group.new('pythonFunctionCall', c.white)
-Group.new('pythonFunction', c.pink)
+Group.new('pythonFunction', c.white)
 Group.new('pythonoperator', c.superwhite)
 Group.new('pythonNumber', c.superwhite)
 Group.new('pythonFloat', c.superwhite)
@@ -97,6 +98,8 @@ Group.new('scalaKeywordModifier', c.orange)
 Group.new('scalaNameDefinition', c.yellow)
 Group.new('scalaSymbol', c.aqua)
 Group.new('scalanamedefinition', c.superwhite)
+Group.new('scalaInterpolation', c.violet)
+Group.new('scalaParameterAnnotation', c.violet)
 
 -- Java
 Group.new('javaSpecial', c.orange)
@@ -116,6 +119,7 @@ Group.new('rustFuncCall', c.white)
 Group.new('rustKeyword', c.lightorange)
 Group.new('rustTypedef', c.orange)
 Group.new('rustAttribute', c.blue)
+Group.new('rustSigil', c.orange)
 
 -- Lua
 Group.new('luaFuncCall', c.white)
@@ -131,6 +135,9 @@ Group.new('shShebang', c.blue)
 Group.new('shFunction', c.blue)
 Group.new('shStatement', c.blue)
 Group.new('shCaseBar', c.blue)
+Group.new('shDeref', c.blue)
+Group.new('shDerefVar', c.blue)
+Group.new('PreProc', c.white)
 
 -- Terraform
 Group.new('hclFunction', c.white)
@@ -152,6 +159,7 @@ Group.new('vimmapmodkey', c.lightorange)
 Group.new('vimmaplhs', c.lightorange)
 Group.new('vimFunction', c.lightorange)
 Group.new('vimFunctionName', c.lightorange)
+Group.new('vimFuncName', c.lightorange)
 
 -- R
 Group.new('rFunction', c.lightorange)
