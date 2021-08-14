@@ -29,6 +29,9 @@ Color.new('fancyyellow', '#b2bf39')
 Color.new('searchbg', '#bfbfbf')
 Color.new('searchfg', '#5e5e5e')
 
+Color.new('stdbackground', '#282c34')
+Color.new('floatbackground', '#393f4a')
+
 --------------------------------
 -- Miscellaneous Highlighting --
 --------------------------------
@@ -36,6 +39,29 @@ Color.new('searchfg', '#5e5e5e')
 Group.new('Search', c.searchfg, c.searchbg, s.NONE)
 Group.new('IncSearch', c.searchfg, c.searchbg, s.NONE)
 Group.new('CursorLineNr', c.lightorange)
+
+Group.new('LspSagaFloatWinBorder', c.lightorange)
+Group.new('LspSagaRenameBorder', c.cyan)
+Group.new('LspSagaHoverBorder', c.cyan)
+Group.new('LspSagaCodeActionBorder', c.cyan)
+Group.new('LspSagaLspFinderBorder', c.cyan)
+Group.new('LspSagaSignatureHelpBorder', c.cyan)
+Group.new('LspSagaDiagnosticBorder', c.cyan)
+Group.new('LspSagaDefPreviewBorder', c.cyan)
+Group.new('LspSagaCodeActionTruncateLine', c.grey)
+Group.new('LspSagaDiagnosticTruncateLine', c.grey)
+Group.new('LspSagaShTruncateLine', c.grey)
+Group.new('CompeDocumentation', c.NONE, c.floatbackground, s.NONE)
+
+Group.new('gitcommitheader', c.white)
+Group.new('gitcommitOnBranch', c.white)
+Group.new('gitcommitBranch', c.orange)
+Group.new('gitcommitType', c.fancyblue)
+Group.new('gitcommitSummary', c.superwhite)
+Group.new('diffSubname', c.white)
+Group.new('diffOldFile', c.white)
+Group.new('diffNewFile', c.white)
+Group.new('diffIndexLine', c.white)
 
 ------------------------------------
 -- Language-specific highlighting
