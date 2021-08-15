@@ -239,3 +239,9 @@ Group.new('makeTarget', c.fancyyellow)
 Group.new('makeIdent', c.lightorange)
 Group.new('makeConfig', c.cyan)
 Group.new('makePrecondit', c.cyan)
+
+-- zsh
+Group.new('zshFunction', c.white)
+
+-- tmux
+Group.new('tmuxOptions', c.white)
