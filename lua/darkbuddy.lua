@@ -39,6 +39,7 @@ Color.new('floatbackground', '#393f4a')
 Group.new('Search', c.searchfg, c.searchbg, s.NONE)
 Group.new('IncSearch', c.searchfg, c.searchbg, s.NONE)
 Group.new('CursorLineNr', c.lightorange)
+Group.new('VertSplit', c.white)
 
 Group.new('LspSagaFloatWinBorder', c.lightorange)
 Group.new('LspSagaRenameBorder', c.cyan)
