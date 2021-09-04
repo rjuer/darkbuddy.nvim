@@ -65,6 +65,11 @@ Group.new('diffNewFile', c.white)
 Group.new('diffIndexLine', c.white)
 Group.new('diffFile', c.fancyblue)
 
+Group.new('DiffAdd', c.lightorange)
+Group.new('DiffChange', c.fancyblue)
+Group.new('DiffDelete', c.grey)
+Group.new('DiffText', c.white)
+
 ------------------------------------
 -- Language-specific highlighting
 ------------------------------------
