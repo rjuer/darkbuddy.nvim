@@ -125,6 +125,14 @@ Group.new('javaVarArg', c.violet)
 Group.new('javaScopeDecl', c.orange)
 Group.new('javaStorageClass', c.orange)
 Group.new('javaLambdaDef', c.orange)
+Group.new('javaDocParam', c.cyan)
+
+-- Clojure
+Group.new('clojureFunc', c.lightorange)
+Group.new('clojureCommentTodo', c.cyan)
+
+-- Kotlin
+Group.new('ktModifier', c.orange)
 
 -- Rust
 Group.new('rustFuncName', c.lightorange)
@@ -135,6 +143,10 @@ Group.new('rustTypedef', c.orange)
 Group.new('rustAttribute', c.blue)
 Group.new('rustSigil', c.orange)
 
+-- Go
+Group.new('goConst', c.violet)
+Group.new('goLabel', c.violet)
+
 -- Lua
 Group.new('luaFuncCall', c.white)
 Group.new('luaBuiltIn', c.green)
@@ -143,6 +155,8 @@ Group.new('luaLocal', c.orange)
 Group.new('luaCond', c.orange)
 Group.new('luaFuncId', c.violet)
 Group.new('luastatement', c.violet)
+Group.new('luaParen', c.lightorange)
+Group.new('luaFunction', c.lightorange)
 
 -- bash, sh
 Group.new('shShebang', c.blue)
@@ -152,6 +166,113 @@ Group.new('shCaseBar', c.blue)
 Group.new('shDeref', c.blue)
 Group.new('shDerefVar', c.blue)
 Group.new('PreProc', c.white)
+
+-- R
+Group.new('rFunction', c.lightorange)
+
+-- C
+Group.new('cUserFunction', c.lightorange)
+Group.new('cParen', c.blue)
+Group.new('cStorageClass', c.blue)
+Group.new('cBlock', c.blue)
+Group.new('cLabel', c.blue)
+Group.new('cblock', c.lightorange)
+Group.new('cUserCont', c.lightorange)
+Group.new('cUserLabel', c.lightorange)
+
+-- C++
+Group.new('cppSTLios', c.blue)
+Group.new('cppSTLfunction', c.blue)
+
+-- C#
+Group.new('csClass', c.orange)
+Group.new('csClassType', c.orange)
+Group.new('csModifier', c.orange)
+Group.new('csNumber', c.violet)
+
+-- Erlang
+Group.new('erlangLocalFunctionCall', c.orange)
+Group.new('erlangBIF', c.orange)
+
+-- Elixir
+Group.new('elixirBlock', c.orange)
+Group.new('elixirFunctionDeclaration', c.orange)
+Group.new('elixirPrivateFunctionDeclaration', c.orange)
+
+-- Julia
+Group.new('juliaFunctionBlock', c.orange)
+Group.new('juliaFunctionDef', c.orange)
+Group.new('juliaFunctionName', c.orange)
+
+-- PHP
+Group.new('phpFunctions', c.lightorange)
+Group.new('phpClasses', c.orange)
+Group.new('phpDefine', c.orange)
+Group.new('phpIdentifier', c.white)
+
+-- HTML
+Group.new('htmlTag', c.white)
+Group.new('htmlTagName', c.lightorange)
+Group.new('endTag', c.white)
+
+-- JavaScript
+Group.new('jsTry', c.orange)
+Group.new('jsCatch', c.orange)
+Group.new('jsConditional', c.orange)
+Group.new('jsFuncCall', c.white)
+Group.new('jsFuncName', c.pink)
+Group.new('jsSpecial', c.pink)
+Group.new('jsExportDefault', c.lightorange)
+Group.new('jsStorageClass', c.blue)
+Group.new('jsFuncBlock', c.blue)
+Group.new('jsParen', c.lightorange)
+Group.new('jsxRegion', c.lightorange)
+Group.new('jsxElement', c.lightorange)
+Group.new('jsxTag', c.lightorange)
+Group.new('jsxOpenTag', c.lightorange)
+Group.new('jsxTagName', c.lightorange)
+Group.new('jsxElement', c.lightorange)
+Group.new('jsxComponentName', c.lightorange)
+Group.new('jsxIfElseBlock', c.lightorange)
+
+-- TypeScript
+Group.new('typescriptObjectType', c.lightorange)
+Group.new('typescriptMember', c.lightorange)
+Group.new('typescriptTemplate', c.lightorange)
+Group.new('typescriptTemplateSubstitution', c.lightorange)
+Group.new('typescriptTemplateSB', c.lightorange)
+Group.new('typescriptFuncName', c.orange)
+Group.new('typescriptObjectLiteral', c.lightorange)
+Group.new('typescriptObjectLabel', c.lightorange)
+
+-- CSS
+Group.new('cssDefinition', c.lightorange)
+Group.new('cssFunction', c.lightorange)
+Group.new('cssFunctionName', c.lightorange)
+Group.new('cssAttrRegion', c.lightorange)
+Group.new('cssBraces', c.lightorange)
+Group.new('cssBoxProp', c.blue)
+Group.new('cssUIProp', c.blue)
+Group.new('cssFontProp', c.blue)
+Group.new('cssBackgroundProp', c.blue)
+Group.new('cssTextProp', c.blue)
+Group.new('cssListProp', c.blue)
+Group.new('cssMediaProp', c.blue)
+Group.new('cssPositioningProp', c.blue)
+Group.new('cssFlexibleBoxProp', c.blue)
+Group.new('cssTransitionProp', c.blue)
+Group.new('cssBorderProp', c.blue)
+Group.new('cssGridProp', c.blue)
+Group.new('cssMultiColumnProp', c.blue)
+Group.new('cssAnimationProp', c.blue)
+Group.new('cssTransformProp', c.blue)
+Group.new('cssCascadeProp', c.blue)
+Group.new('cssClassName', c.lightorange)
+Group.new('cssClassNameDot', c.lightorange)
+
+-- Ruby
+Group.new('rubyMethodDeclaration', c.lightorange)
+Group.new('rubyMethodName', c.lightorange)
 
 -- Terraform
 Group.new('hclFunction', c.white)
@@ -174,34 +295,6 @@ Group.new('vimmaplhs', c.lightorange)
 Group.new('vimFunction', c.lightorange)
 Group.new('vimFunctionName', c.lightorange)
 Group.new('vimFuncName', c.lightorange)
-
--- R
-Group.new('rFunction', c.lightorange)
-
--- C#
-Group.new('csClass', c.orange)
-Group.new('csClassType', c.orange)
-Group.new('csModifier', c.orange)
-Group.new('csNumber', c.violet)
-
--- PHP
-Group.new('phpFunctions', c.lightorange)
-Group.new('phpClasses', c.orange)
-Group.new('phpDefine', c.orange)
-Group.new('phpIdentifier', c.white)
-
--- HTML
-Group.new('htmlTag', c.white)
-Group.new('htmlTagName', c.lightorange)
-Group.new('endTag', c.white)
-
--- JavaScript
-Group.new('jsTry', c.orange)
-Group.new('jsCatch', c.orange)
-Group.new('jsConditional', c.orange)
-Group.new('jsFuncCall', c.white)
-Group.new('jsFuncName', c.pink)
-Group.new('jsSpecial', c.pink)
 
 ------------------------------------
 -- File-specific highlighting
