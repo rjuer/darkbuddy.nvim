@@ -350,6 +350,15 @@ Group.new('makeIdent', c.lightorange)
 Group.new('makeConfig', c.cyan)
 Group.new('makePrecondit', c.cyan)
 
+-- Logfile
+Group.new('logDomain', c.violet)
+Group.new('logTime', c.lightorange)
+Group.new('logUUID', c.blue)
+Group.new('logMacAddress', c.blue)
+
+-- YAML
+Group.new('yamlBlockCollectionItemStart', c.white)
+
 -- zsh
 Group.new('zshFunction', c.white)
 
