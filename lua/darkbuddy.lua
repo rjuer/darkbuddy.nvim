@@ -112,7 +112,10 @@ Group.new('scalaNameDefinition', c.yellow)
 Group.new('scalaSymbol', c.aqua)
 Group.new('scalanamedefinition', c.superwhite)
 Group.new('scalaInterpolation', c.violet)
+Group.new('scalaInterpolationBoundary', c.pink)
 Group.new('scalaParameterAnnotation', c.violet)
+Group.new('scalaSpecialFunction', c.blue)
+Group.new('scalaTodo', c.cyan)
 
 -- Java
 Group.new('javaSpecial', c.orange)
