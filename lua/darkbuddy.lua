@@ -81,6 +81,11 @@ Group.new('DiffText', c.white)
 Group.new('SneakLabel', c.searchfg, c.searchbg, s.NONE)
 Group.new('SneakScope', c.white)
 
+-- plug
+Group.new('plugName', c.lightorange)
+Group.new('plugMessage', c.lightorange)
+Group.new('plugInstall', c.lightorange)
+
 ------------------------------------
 -- Language-specific highlighting
 ------------------------------------
