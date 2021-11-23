@@ -77,6 +77,10 @@ Group.new('DiffChange', c.fancyblue)
 Group.new('DiffDelete', c.grey)
 Group.new('DiffText', c.white)
 
+-- vim-sneak
+Group.new('SneakLabel', c.searchfg, c.searchbg, s.NONE)
+Group.new('SneakScope', c.white)
+
 ------------------------------------
 -- Language-specific highlighting
 ------------------------------------
