@@ -88,6 +88,8 @@ Group.new('plugName', c.lightorange)
 Group.new('plugMessage', c.lightorange)
 Group.new('plugInstall', c.lightorange)
 
+Group.new('readlineFunction', c.white)
+
 ------------------------------------
 -- Language-specific highlighting
 ------------------------------------
