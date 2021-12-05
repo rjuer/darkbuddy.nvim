@@ -109,6 +109,7 @@ Group.new('pythonClass', c.violet)
 Group.new('pythonImport', c.orange)
 Group.new('pythonBuiltinObj', c.green)
 Group.new('pythonDecorator', c.blue)
+Group.new('pythonDottedName', c.blue)
 
 -- Scala
 Group.new('scalaAnnotation', c.violet)
