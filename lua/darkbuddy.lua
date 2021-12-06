@@ -331,7 +331,8 @@ Group.new('sqlkeyword', c.lightorange)
 Group.new('sqloperator', c.lightorange)
 Group.new('sqlspecial', c.lightorange)
 Group.new('sqlnumber', c.violet)
-Group.new('sqlfunction', c.lightorange)
+Group.new('sqlfunction', c.blue)
+Group.new('sqltype', c.orange)
 Group.new('sqlStatement', c.lightorange)
 
 -- Dockerfile
