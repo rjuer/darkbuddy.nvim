@@ -293,6 +293,9 @@ Group.new('cssClassNameDot', c.lightorange)
 Group.new('rubyMethodDeclaration', c.lightorange)
 Group.new('rubyMethodName', c.lightorange)
 
+-- Perl
+Group.new('perlSubname', c.blue)
+
 -- Terraform
 Group.new('hclFunction', c.white)
 Group.new('hclAttributeName', c.lightorange)
