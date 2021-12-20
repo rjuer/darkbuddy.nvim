@@ -80,6 +80,8 @@ Group.new('DiffChange', c.fancyblue)
 Group.new('DiffDelete', c.grey)
 Group.new('DiffText', c.white)
 
+Group.new('manSubHeading', c.cyan)
+
 -- vim-sneak
 Group.new('SneakLabel', c.searchfg, c.searchbg, s.NONE)
 Group.new('SneakScope', c.white)
