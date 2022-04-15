@@ -42,6 +42,9 @@ Group.new('CursorLineNr', c.lightorange)
 Group.new('VertSplit', c.grey)
 Group.new('qffilename', c.white)
 
+Group.new('MoreMsg', c.white)
+Group.new('Question', c.white)
+
 Group.new('CmpItemAbbr', c.grey)
 Group.new('CmpItemAbbrDeprecated', c.grey)
 Group.new('CmpItemAbbrMatch', c.white)
