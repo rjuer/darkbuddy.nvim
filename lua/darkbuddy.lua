@@ -94,6 +94,31 @@ Group.new('plugName', c.lightorange)
 Group.new('plugMessage', c.lightorange)
 Group.new('plugInstall', c.lightorange)
 
+-- nvim-dap
+-- # scopes
+Group.new('DapUIScope', c.lightorange)  -- locals, globals
+Group.new('DapUIDecoration', c.fancyblue)  -- hierarchy arrows
+Group.new('DapUIVariable', c.white)
+Group.new('DapUIType', c.lightpurple)
+Group.new('DapUIValue', c.superwhite)
+Group.new('DapUIModifiedValue', c.lightorange)
+
+-- # breakpoints
+Group.new('DapUIBreakpointsPath', c.lightpurple)
+
+-- # stacks
+Group.new('DapUIFrameName', c.lightorange)
+Group.new('DapUISource', c.lightpurple)
+Group.new('DapUILineNumber', c.white)
+Group.new('DapUIThread', c.white)
+Group.new('DapUIStoppedThread', c.lightpurple)
+
+-- # watches
+Group.new('DapUIWatchesEmpty', c.lightpurple)
+Group.new('DapUIWatchesError', c.lightpurple)
+Group.new('DapUIWatchesValue', c.white)
+
+-- Misc
 Group.new('readlineFunction', c.white)
 
 ------------------------------------
